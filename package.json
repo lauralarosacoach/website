@@ -1,0 +1,21 @@
+{
+  "name": "lauralarosa",
+  "version": "1.0.0",
+  "description": "TITLE:  Twist - One Page Fully Responsive Free HTML5 template",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauralarosacoach/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lauralarosacoach/website/issues"
+  },
+  "homepage": "https://github.com/lauralarosacoach/website#readme"
+}
