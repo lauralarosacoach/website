@@ -322,8 +322,9 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 	.navbar-brand {
+		align-items: center;
 		float: left;
-		display: block;
+		display: flex;
 		font-size: 24px;
 		font-weight: 700;
 		padding-left: 28px;
@@ -331,21 +332,10 @@ h1, h2, h3, h4, h5, h6 {
 		text-transform: uppercase;
 		letter-spacing: 3px;
 		position: relative;
-		&:after, &:before {
-			content: "";
-			position: absolute;
-			display: block;
-			width: 24px;
-			height: 24px;
-			background: rgba($brand-secondary,.6);
-			left: -12px;
-			margin-left: 0px;
-			bottom: 16px;
-			@include border-radius(50%);
-		}
-		&:before{
-			left: 0px;
-			background: rgba($brand-primary,.8);
+		img {
+			width: 30px;
+			height: 30px;
+			margin-right: 10px;
 		}
 		> span {
 			color: $brand-primary;
@@ -945,6 +935,11 @@ h1, h2, h3, h4, h5, h6 {
 		margin-bottom: 70px;
 		.icon{
 			margin-bottom: 20px;
+			img{
+				width: 150px;
+				height: 150px;
+				object-fit: cover;
+			}
 			span{
 				width: 130px;
 				height: 130px;
