@@ -177,10 +177,13 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing: 3px;
     position: relative; }
-    #fh5co-header .navbar-brand img {
-      width: 30px;
+    #fh5co-header .navbar-brand img.isotipo {
       height: 30px;
+      width: 30px;
       margin-right: 10px; }
+    #fh5co-header .navbar-brand img.logotipo {
+      height: 35px;
+      width: auto; }
     #fh5co-header .navbar-brand > span {
       color: #223958; }
     @media screen and (max-width: 992px) {
@@ -833,6 +836,14 @@ h1, h2, h3, h4, h5, h6 {
         #fh5co-team .team-box .social-media li a:hover, #fh5co-team .team-box .social-media li a:focus, #fh5co-team .team-box .social-media li a:active {
           text-decoration: none;
           color: #223958 !important; }
+#fh5co-team #carousel-testimonials .carousel-inner {
+  display: flex;
+  justify-content: center; }
+  #fh5co-team #carousel-testimonials .carousel-inner .item {
+    height: 100%;
+    width: 60%; }
+#fh5co-team #carousel-testimonials .carousel-control {
+  background: none; }
 
 .box-faq {
   margin-bottom: 60px; }

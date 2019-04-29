@@ -333,9 +333,15 @@ h1, h2, h3, h4, h5, h6 {
 		letter-spacing: 3px;
 		position: relative;
 		img {
-			width: 30px;
-			height: 30px;
-			margin-right: 10px;
+			&.isotipo {
+				height: 30px;
+				width: 30px;
+				margin-right: 10px;
+			}
+			&.logotipo {
+				height: 35px;
+				width: auto;
+			}
 		}
 		> span {
 			color: $brand-primary;
@@ -1146,6 +1152,20 @@ h1, h2, h3, h4, h5, h6 {
 					}
 				}
 			}
+		}
+	}
+	#carousel-testimonials {
+		.carousel-inner {
+			display: flex;
+			justify-content: center;
+
+			.item {
+				height: 100%;
+				width: 60%;
+			}
+		}
+		.carousel-control {
+			background: none;
 		}
 	}
 }
