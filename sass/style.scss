@@ -1158,6 +1158,9 @@ h1, h2, h3, h4, h5, h6 {
 		.carousel-inner {
 			display: flex;
 			justify-content: center;
+			overflow: visible;
+			margin-bottom: 3rem;
+			min-height: 500px;
 
 			.item {
 				height: 100%;
@@ -1166,6 +1169,10 @@ h1, h2, h3, h4, h5, h6 {
 		}
 		.carousel-control {
 			background: none;
+		}
+		.carousel-indicators {
+			bottom: 0;
+			position: relative;
 		}
 	}
 }
