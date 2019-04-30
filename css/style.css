@@ -340,13 +340,13 @@ h1, h2, h3, h4, h5, h6 {
           border: 2px solid #223958;
           background: #223958;
           text-decoration: none !important; }
-          @media screen and (max-width: 768px) {
-            #fh5co-home .text-inner .call-to-action a.demo {
-              margin-bottom: 20px; } }
         #fh5co-home .text-inner .call-to-action a.download {
           border: 2px solid #FFBC53;
           background: #FFBC53;
           text-decoration: none !important; }
+        @media screen and (max-width: 768px) {
+          #fh5co-home .text-inner .call-to-action a.demo, #fh5co-home .text-inner .call-to-action a.download {
+            margin-bottom: 20px; } }
 
 #fh5co-services,
 #fh5co-testimony,
@@ -726,6 +726,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   width: 100%; }
+  @media screen and (min-width: 992px) {
+    .core-features {
+      min-height: 600px; } }
   .core-features .grid2 {
     width: 50%;
     background-size: cover;
@@ -793,9 +796,6 @@ h1, h2, h3, h4, h5, h6 {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px; }
-  @media screen and (max-width: 992px) {
-    #fh5co-team .team-box {
-      margin-bottom: 110px; } }
   #fh5co-team .team-box .user {
     position: absolute;
     top: 0;
@@ -836,20 +836,18 @@ h1, h2, h3, h4, h5, h6 {
         #fh5co-team .team-box .social-media li a:hover, #fh5co-team .team-box .social-media li a:focus, #fh5co-team .team-box .social-media li a:active {
           text-decoration: none;
           color: #223958 !important; }
-#fh5co-team #carousel-testimonials .carousel-inner {
+#fh5co-team .testimonials.owl-carousel .owl-stage-outer .owl-stage .owl-item {
+  height: 460px;
   display: flex;
   justify-content: center;
-  overflow: visible;
-  margin-bottom: 3rem;
-  min-height: 500px; }
-  #fh5co-team #carousel-testimonials .carousel-inner .item {
-    height: 100%;
-    width: 60%; }
-#fh5co-team #carousel-testimonials .carousel-control {
-  background: none; }
-#fh5co-team #carousel-testimonials .carousel-indicators {
-  bottom: 0;
-  position: relative; }
+  align-items: center; }
+  #fh5co-team .testimonials.owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
+    width: 90%; }
+    #fh5co-team .testimonials.owl-carousel .owl-stage-outer .owl-stage .owl-item .item .team-box {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      height: 350px; }
 
 .box-faq {
   margin-bottom: 60px; }
@@ -877,6 +875,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding-bottom: 50px;
   margin-bottom: 0px; }
+  .section-heading.testimonials {
+    padding-bottom: 0; }
   .section-heading h2 {
     margin: 0 0 20px 0;
     font-size: 24px;
