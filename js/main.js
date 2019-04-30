@@ -617,6 +617,36 @@
 		}
 	};
 
+	var resumenAnimate = function () {
+		var footer = $('#fh5co-resumen');
+		if (footer.length > 0) {
+
+			footer.waypoint(function (direction) {
+
+				if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+					setTimeout(function () {
+						footer.find('.to-animate').each(function (k) {
+							var el = $(this);
+
+							setTimeout(function () {
+								el.addClass('fadeIn animated');
+							}, k * 200, 'easeInOutExpo');
+
+						});
+					}, 200);
+
+
+					$(this.element).addClass('animated');
+
+				}
+			}, {
+				offset: '80%'
+			});
+
+		}
+	};
+
 	var counter = function() {
 		$('.js-counter').countTo({
 			 formatter: function (value, options) {
@@ -662,6 +692,7 @@
 		trustedAnimate();
 		footerAnimate();
 		blogAnimate();
+		resumenAnimate();
 		counter();
 		counterWayPoint();
 

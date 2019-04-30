@@ -358,7 +358,8 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-work,
 #fh5co-counters,
 #fh5co-pricing,
-#fh5co-blog {
+#fh5co-blog,
+#fh5co-resumen {
   padding: 8em 0; }
   @media screen and (max-width: 768px) {
     #fh5co-services,
@@ -371,7 +372,8 @@ h1, h2, h3, h4, h5, h6 {
     #fh5co-work,
     #fh5co-counters,
     #fh5co-pricing,
-    #fh5co-blog {
+    #fh5co-blog,
+    #fh5co-resumen {
       padding: 3em 0; } }
 
 #fh5co-services {
@@ -602,6 +604,9 @@ h1, h2, h3, h4, h5, h6 {
   .fh5co-blog .desc:hover, .fh5co-blog .desc:focus {
     text-decoration: none; }
 
+.fh5co-resumen .resumen {
+  margin-bottom: 40px; }
+
 #fh5co-pricing .price-box {
   border: 2px solid #ECEEF0;
   text-align: center;
@@ -637,6 +642,12 @@ h1, h2, h3, h4, h5, h6 {
         border-top-color: #FFBC53;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent; }
+  #fh5co-pricing .price-box .item {
+    display: flex;
+    text-align: left; }
+    #fh5co-pricing .price-box .item i {
+      color: #FFBC53;
+      margin-right: 1rem; }
 #fh5co-pricing .pricing-plan {
   margin: 0;
   padding: 0;
