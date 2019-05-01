@@ -1211,6 +1211,12 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 20px;
 		margin-bottom: 20px;
 	}
+	&.valores{
+		i {
+			float: initial;
+			margin-right: 1rem;
+		}
+	}
 }
 
 

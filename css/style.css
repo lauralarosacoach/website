@@ -870,6 +870,9 @@ h1, h2, h3, h4, h5, h6 {
   .box-faq h3 {
     font-size: 20px;
     margin-bottom: 20px; }
+  .box-faq.valores i {
+    float: initial;
+    margin-right: 1rem; }
 
 .partner-logo {
   margin-bottom: 30px;
